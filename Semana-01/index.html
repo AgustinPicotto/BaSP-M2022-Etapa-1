@@ -1,8 +1,11 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-
+            Trackgenix SA
         </title>
     </head>
     <body>
@@ -20,13 +23,13 @@
             <aside>
                 <ul>
                     <li>
-                        Home
+                       <a href="#">Home</a>
                     </li>
                     <li>
-                        Sing Up
+                        <a href="#">Sing Up</a>
                     </li>
                     <li>
-                        Log In
+                        <a href="#">Log In</a>
                     </li>
                 </ul>
                 <h2>
@@ -37,15 +40,15 @@
                     ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem 
                     feugiat tempus aliquam.
                 </p>
-                <img scr="" alt="icono mail">
+                <img src="" alt="icono mail">
                 <p>
                     information@unititled.tld
                 </p>
-                <img scr="" alt="icono telefono">
+                <img src="" alt="icono telefono">
                 <p>
                     Tel.:(000) 000-0000
                 </p>
-                <img scr="" alt="icono casa">
+                <img src="" alt="icono casa">
                 <p>
                     1234 Somewhere Road #8254
                 </p>
@@ -54,6 +57,7 @@
                 </p>
             </aside>
         </nav>
+        <!-- Description-->
         <section>
             <h2>
              Welcome to Trackgenix.
@@ -67,9 +71,9 @@
             Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam.
             Lorem ipsum dolor sit nullam.
              </p>
-             <img src="../Imagenes/imagen de recursos humanos.png" alt="imagen de recursos humanos">
+             <img src="../Imagenes/imagen-de-recursos-humanos.png" alt="imagen de recursos humanos">
         </section>
-        <hr>
+        <!--Features-->
         <section>
             <h2>
                 Features
@@ -77,7 +81,7 @@
             <h3>
                 RECORD OF HOURS
             </h3>
-            <img src="../Imagenes/imagen reloj.png" alt="-imagen_relog">
+            <img src="../Imagenes/imagen-reloj.png" alt="-imagen relog">
             <p>
                 Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
                 Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
@@ -85,7 +89,7 @@
             <h3>
                 RESOURCE MANAGEMENT
             </h3>
-            <img src="../Imagenes/gestion de recursos imagen.jpg" alt="gestion_de_recursos_imagen">
+            <img src="../Imagenes/gestion-de-recursos-imagen.jpg" alt="gestion de recursos imagen">
             <p>
                 Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
                 Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
@@ -93,7 +97,7 @@
             <h3>
                 REPORTS
             </h3>
-            <img src="../Imagenes/imagen reporte.png" alt="imagen_reporte">
+            <img src="../Imagenes/imagen-reporte.png" alt="imagen reporte">
             <p>
                 Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
                 Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam. 
@@ -101,13 +105,13 @@
             <h3>
                 MULTIPLE ROLES
             </h3>
-            <img src="../Imagenes/imagen multiples roles.png" alt="multiples_roles">
+            <img src="../Imagenes/imagen-multiples-roles.png" alt="multiples_roles">
             <p>
                 Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
                 Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam. 
             </p>
         </section>
-        <hr>
+        <!--Main Reasons to use-->
         <section>
             <div>
                 <h3>
@@ -119,9 +123,9 @@
                 </p>
             </div>
             <div>
-                <H3>
+                <h3>
                     WORK TRACEABILITY
-                </H3>
+                </h3>
                 <p>
                     Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
                     Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam. 
@@ -146,40 +150,46 @@
                 </p>
             </div>
         </section>
-        <hr>
+        <!--Contact-Information-->
         <section>
+            <h2>
+                Information
+            </h2>
             <form>
-                <div>
-                    <label> 
-                        NAME & LAST NAME
-                    </label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label>
-                         E-MAIL
-                    </label>
-                    <input type="email">
-                </div>
-                <div>
-                    <label>
-                        CONTACT
-                    </label>
-                    <input type="checkbox" name="Human Resources"> Human Resources
-                    <input type="checkbox" name="Sistems"> Sistems
-                    <input type="checkbox" name="Commercialization"> Commercialization
-                </div>
-                <div>
-                    <label>
-                        Message
-                    </label>
-                    <textarea>
-    
-                    </textarea>
-                </div>
+                <fieldset>
+                    <div>
+                        <label for="NameLastName">
+                            NAME & LAST NAME
+                        </label>
+                        <input type="text" Id="NameLastName" name="NameLastName">
+                    </div>
+                    <div>
+                        <label for="email">
+                            E-MAIL
+                        </label>
+                        <input type="email" Id="email" name="email" placeholder="name@email">
+                    </div>
+                    <div>
+                        <label>
+                            CONTACT
+                        </label>
+                        <input type="checkbox" id="Human-Resources" name="Human-Resources"> Human Resources
+                        <input type="checkbox" name="Sistems"> Sistems
+                        <input type="checkbox" name="Commercialization"> Commercialization
+                    </div>
+                    <div>
+                        <label>
+                            Message
+                        </label>
+                        <textarea>
+        
+                        </textarea>
+                        <input type="submit" name="enviar" value="Enviar">
+                    </div>
+            </fieldset>
             </form>
         </section>
-        <hr>
+        <!--History-->
         <section>
             <h2>
                 OUR HISTORY
@@ -213,60 +223,67 @@
                 Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
             </p>
         </section>
-        <hr>
+        <!--List-->>
         <section>
-            <ul>
+            <div>
                 <h2>
                     PRODUCTS
                 </h2>
-                <li>
-                    Functionalities
-                </li>
-                <li>
-                    Downloads
-                </li>
-                <li>
-                    Integrations
-                </li>
-                <li>
-                    Extras
-                </li>
-            </ul>
-            <ul>
+                <ul>
+                    <li>
+                        <a href="#">Functionalities</a>
+                    </li>
+                    <li>
+                        <a href="#">Downloads</a>
+                    </li>
+                    <li>
+                        <a href="#">Integrations</a>
+                    </li>
+                    <li>
+                        <a href="#">Extras</a>
+                    </li>
+                </ul>
+            </div>
+            <div>   
                 <h2>
                     COMPANY
                 </h2>
-                <li>
-                    About us
-                </li>
-                <li>
-                    Clients
-                </li>
-                <li>
-                    Resources
-                </li>
-                <li>
-                    Blog
-                </li>
-            </ul>
-            <ul>
+                <ul>
+                    <li>
+                       <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Clients</a>
+                    </li>
+                    <li>
+                        <a href="#">Resources</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
                 <h2>
                     SUPPORT
                 </h2>
-                <li>
-                    Help
-                </li>
-                <li>
-                    Tutorials
-                </li>
-                <li>
-                    API
-                </li>
-                <li>
-                    Contact
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">Tutorials</a>
+                    </li>
+                    <li>
+                        <a href="#">API</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </section>
+        <!--Footer-->
         <footer>
             <h3>
                 Rosario, Santa Fe - Argentina
@@ -275,12 +292,5 @@
                 Copyright &#169 2022 Trackgenix SA, All right reserved.
             </h3>
         </footer>
-       
-
-
-
-
-
-
     </body>
  </html>
