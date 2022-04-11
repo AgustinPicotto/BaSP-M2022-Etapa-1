@@ -1,0 +1,35 @@
+
+.flex-container-nav{
+    background-color: #373867;
+    display: flex;
+}
+
+.icon-burguer-menu{
+    display: none;
+}
+@media only screen and (max-width: 480px) {
+    nav ul{
+        display:none;
+    }
+    .icon-burguer-menu{
+        display:flex;
+    }
+    .contact-nav{
+        display: none;
+    }
+    .paragraph-nav{
+        display: none;
+    }
+    nav{
+        font-size: 5px;
+    }
+    .icon{
+        display: none;
+    }
+    .flex-div-contact-nav{
+        display: none;
+    }
+    nav p{
+        display: none;
+    }
+}

@@ -4,8 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="../Semana-04/CSS/reset.css">
+        <link rel="stylesheet" type="text/css" href="../Semana-04/CSS/footer.css">
+        <link rel="stylesheet" type="text/css" href="../Semana-04/CSS/header.css">
+        <link rel="stylesheet" type="text/css" href="../Semana-04/CSS/main.css">
+        <link rel="stylesheet" type="text/css" href="../Semana-04/CSS/sidebar.css">
+        <link rel="stylesheet" type="text/css" href="../Semana-04/CSS/body.css">
         </style>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
@@ -16,7 +20,7 @@
     </head>
     <body>
         <!-- Headings-->
-        <header class="main-header">
+        <header class="flex-container-header">
             <h1>
                 Trackgenix
             </h1>
@@ -25,7 +29,8 @@
             </h2>
         </header>
         <!-- Sidebar-->
-        <nav>
+        <nav class="flex-container-nav">
+                <img class="icon-burguer-menu" src="../Imagenes/burguer-menu.png" alt="icon-burguer-menu" href="#">
                 <div class="bordered-top"></div>
                 <ul>
                     <li>
@@ -39,7 +44,7 @@
                     </li>
                 </ul>
                 <div class="bordered-bottom"></div>
-                <div class="div-contact-nav">
+                <!--<div class="flex-div-contact-nav">-->
                     <h2 class="contact-nav">
                         Contact
                     </h2>
@@ -63,76 +68,77 @@
                     <p class="icon-desc-2">
                         Nashville, TN 00000-0000
                     </p>
-                </div>
+                <!--</div>-->
         </nav>
         <main>
             <!-- Description-->
-            <section class="description-main">
+            <section class="flex-container-description-main">
                 <h2>
                 Welcome to Trackgenix.
                 </h2>
                     <h3>
                     The new work system
                     </h3>
+                    <img src="../Imagenes/imagen-de-recursos-humanos.png" alt="imagen de recursos humanos">
                     <p>
                     Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue.
                     Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris.
                     Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam.
                     Lorem ipsum dolor sit nullam.
                     </p>
-                    <img src="../Imagenes/imagen-de-recursos-humanos.png" alt="imagen de recursos humanos">
                     <div class="bordered-top-main"></div>
             </section>
             <!--Features-->
-            <section class="features-main">
+            <section class="flex-container-features-main">
                 <h2>
                     Features
                 </h2>
-                <div class="container">
                     <h3>
                         RECORD OF HOURS
                     </h3>
-                    <img src="../Imagenes/imagen-reloj.png" alt="-imagen relog">
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
-                        Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-                    </p>
-                </div>
-                <div class="container">
+                    <div class="flex-div">
+                        <img src="../Imagenes/imagen-reloj.png" alt="-imagen relog">
+                        <p class="p-odd">
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
+                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+
+                    </div>
                     <h3>
                         RESOURCE MANAGEMENT
                     </h3>
-                    <img src="../Imagenes/gestion-de-recursos-imagen.jpg" alt="gestion de recursos imagen">
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
-                        Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-                    </p>
-                </div>
-                <div class="container">
+                    <div class="flex-div">
+                        <p class="p-even">
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
+                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                        <img src="../Imagenes/gestion-de-recursos-imagen.jpg" alt="gestion de recursos imagen">
+                    </div>
                     <h3>
                         REPORTS
                     </h3>
-                    <img src="../Imagenes/imagen-reporte.png" alt="imagen reporte">
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
-                        Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam. 
-                    </p>
-                </div>
-                <div class="container">
+                    <div class="flex-div">
+                        <img src="../Imagenes/imagen-reporte.png" alt="imagen reporte">
+                        <p class="p-odd">
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
+                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam. 
+                        </p>
+                    </div>
                     <h3>
                         MULTIPLE ROLES
                     </h3>
-                    <img src="../Imagenes/imagen-multiples-roles.png" alt="multiples_roles">
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
-                        Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam. 
-                    </p>
-                </div>
+                        <div class="flex-div">
+                        <p class="p-even">
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
+                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                        <img src="../Imagenes/imagen-multiples-roles.png" alt="multiples_roles">
+                    </div>
             </section>
             <!--Main Reasons to use-->
-            <section>
+            <section class="flex-container-mainreason">
             <div class="bordered-top-main"></div>
-                <div class="container-2">
+                <div class="div-mainreason-container">
                     <h3>
                         PRODUCTIVITY BOOSTER
                     </h3>
@@ -141,7 +147,7 @@
                         Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam. 
                     </p>
                 </div>
-                <div class="container-2">
+                <div class="div-mainreason-container">
                     <h3>
                         WORK TRACEABILITY
                     </h3>
@@ -150,7 +156,7 @@
                         Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam. 
                     </p>
                 </div>
-                <div class="container-2">
+                <div class="div-mainreason-container">
                     <h3>
                         LEADERSHIP AND TEAM MANAGEMENT
                     </h3>
@@ -159,7 +165,7 @@
                         Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam. 
                     </p>
                 </div>
-                <div class="container-2">
+                <div class="div-mainreason-container">
                     <h3>
                         DECISION MAKING
                     </h3>
