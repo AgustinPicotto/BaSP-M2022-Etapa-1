@@ -211,9 +211,6 @@ textarea{
     align-items: center;
 }
 @media only screen and (min-width: 768px) {
-    .flex-container-description-main{
-        flex-direction: row wrap;
-    }
     .flex-container-description-main h2{
         font-size: 72px;
     }

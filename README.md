@@ -20,10 +20,16 @@ Week 1: Progress 90%
 Week 2: Progress 100%
 ```
 ## CSS Styles
-1. Utilizing Visual Studio Code, we wrote the codes for the styles of the HTML of the landing page of "Trackgenix", with the objetive to get the screen of the landing page created with FIGMA.
+1. Utilizing Visual Studio Code, we wrote the codes for the styles of the HTML of the landing page of "Trackgenix", 
+with the objetive to get the screen of the landing page created with FIGMA.
 2. We did several checkpoints on GIThub using GIT with our progress.
 ``` 
-Week 2:- Waiting the corrections
+Week 3: Progress 100%
 ```
+## CSS Resposive Desing.
+1. We starting with the desing resposive, considering the mobile desing as start point.
+2. We create a resposive desing for the three dispositives (mobile, tablet and desktop).
+3. The main tool of css used was "Flex Box", we study the concepts and applied to the web.
+4. We configure github pages to have the prototype of the web public, and linked to the repository.
 ## Contact
 Please be free to send any coment or question at agustin.picotto@gmail.com - BaSP-Paloma 01 Team!
