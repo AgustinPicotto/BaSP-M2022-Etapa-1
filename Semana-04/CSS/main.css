@@ -2,6 +2,11 @@
     display: flex;
     flex-direction: column;
 }
+.flex-container-2items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .flex-container-features-main{
     display: flex;
     flex-direction: column;
@@ -13,99 +18,309 @@
     display: flex;
     flex-direction: column;
 }
-@media only screen and (max-width: 480px) {
+.flex-container-information-main{
+    display: flex;
+    flex-direction: column;
+}
+.flex-container-history-main{
+    display: flex;
+    flex-direction: column;
+}
+.flex-container-list-main{
+    display: flex;
+    flex-direction: column;
+}
+.flex-container-list-1{
+    display: flex;
+    flex-direction: column;
+}
+.flex-container-description-main{
+    align-items: center;
+}
+.flex-container-description-main h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 10px;
+}
+.flex-container-description-main h3{
+    font-size: 13px;
+    font-size: bold;
+    margin-bottom:10px;
+}
+.flex-container-description-main p{
+    font-size: 9px;
+    text-align: center;
+    margin: 10px 10px;
+}
+.flex-container-description-main img{
+    width: 50%;
+}
+.bordered-top-main{
+    border: 2px solid #AACE9B;
+    width: 75%;
+    height: 0px;
+}
+.flex-container-features-main{
+    align-items: center;
+}
+.flex-container-features-main h2{
+    font-size: 18px;
+    margin: 10px 10px;
+}
+.flex-container-features-main h3{
+    font-size: 10px;
+    font-style: bold;
+    margin-top: 15px;
+    margin-bottom:5px;
+}
+.flex-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.flex-container-features-main img{
+    width: 10%;
+    margin-bottom: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.flex-container-features-main .p-odd{
+    font-size:7px;
+    width: 70%;
+    text-align: center;
+    margin-right: 40px;
+    color:#373867;
+    line-height: 12px;
+    margin-bottom: 10px;
+}
+.flex-container-features-main .p-even{
+    font-size:7px;
+    width: 70%;
+    text-align: center;
+    margin-left: 20px;
+    color:#373867;
+    line-height: 12px;
+    margin-bottom: 10px;
+}
+.div-mainreason-container h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #AACE9B;
+    text-align: center;
+    margin-top: 25px;
+}
+.div-mainreason-container{
+    border: 2px solid #AACE9B;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 65%;
+    padding:10px;
+}
+.div-mainreason-container p{
+    color: #373867;
+    text-align: center;
+    font-size: 10px;
+    font-style: bold;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+.flex-container-mainreason{
+    align-items: center;
+}
+.flex-container-information-main{
+    align-items: center;
+}
+.label-1{
+    font-size: 9px;
+    font-weight: bold;
+    display: block;
+    color: #636363;
+}
+.label-2{
+    font-size: 7px;
+    font-weight: bold;
+    color: #636363;
+}
+.div-form{
+    margin: 10px 10px;
+}
+textarea{
+    width: 200px;
+}
+.input-form{
+    width: 200px;
+}
+.flex-container-history-main{
+    align-items: center;
+    justify-content: center;
+}
+.flex-container-history-main h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 15px;
+}
+.paragraph-history-1{
+    font-size: 10px;
+    font-size: bold;
+    text-align: center;
+    margin: 10px 10px;
+    color: #373867;
+}
+.paragraph-history-2{
+    font-size: 7px;
+    text-align: center;
+    margin: 10px 10px;
+    color: #373867;
+}
+.flex-container-list-1{
+    align-items: center;
+}
+.flex-container-list-1 h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #AACE9B;
+    margin: 10px 10px;
+}
+.flex-container-list-1 ul{
+    list-style-type: circle;
+}
+.flex-container-list-1 li{
+    font-size: 14px;
+    color: #373867;
+}
+.flex-container-list-1 a{
+    text-decoration: none;
+    color: #373867;
+}
+.flex-container-mainreason{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container-mainreason-2items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div-mainreason-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (min-width: 768px) {
     .flex-container-description-main{
-        align-items: center;
+        flex-direction: row wrap;
     }
     .flex-container-description-main h2{
-        font-size: 20px;
-        font-weight: bold;
-        margin: 10px 10px;
+        font-size: 72px;
     }
     .flex-container-description-main h3{
-        font-size: 13px;
-        font-size: bold;
-        margin-bottom:10px;
+        font-size: 36px;
     }
     .flex-container-description-main p{
-        font-size: 9px;
+        font-size: 24px;
         text-align: center;
         margin: 10px 10px;
     }
     .flex-container-description-main img{
         width: 50%;
     }
-    .bordered-top-main{
-        border: 2px solid #AACE9B;
-        width: 75%;
-        height: 0px;
-    }
-    .flex-container-features-main{
-        align-items: center;
-    }
-    .flex-container-features-main h2{
-        font-size: 18px;
-        margin: 10px 10px;
-    }
-    .flex-container-features-main h3{
-        font-size: 10px;
-        font-style: bold;
-        margin-top: 15px;
-        margin-bottom:5px;
-    }
-    .flex-div{
-        display: flex;
+    .flex-container-2items{
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
-    .flex-container-features-main img{
-        width: 10%;
-        margin-bottom: 25px;
-        margin-left: 5px;
-        margin-right: 5px;
+    .flex-container-features-main h2{
+        font-size: 48px;
+    }
+    .flex-container-features-main h3{
+        font-size: 30px;
     }
     .flex-container-features-main .p-odd{
-        font-size:7px;
-        width: 70%;
+        font-size:14px;
+        width: 55%;
         text-align: center;
-        margin-right: 40px;
-        color:#373867;
         line-height: 12px;
         margin-bottom: 10px;
     }
     .flex-container-features-main .p-even{
-        font-size:7px;
-        width: 70%;
+        font-size:14px;
+        width: 55%;
         text-align: center;
-        margin-left: 20px;
-        color:#373867;
         line-height: 12px;
         margin-bottom: 10px;
     }
-    .div-mainreason-container h3{
-        font-size: 18px;
-        font-weight: bold;
-        color: #AACE9B;
-        text-align: center;
-        margin-top: 25px;
-    }
-    .div-mainreason-container{
-        border: 2px solid #AACE9B;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        width: 65%;
-        padding:10px;
-    }
-    .div-mainreason-container p{
-        color: #373867;
-        text-align: center;
-        font-size: 10px;
-        font-style: bold;
+    .flex-container-features-2items img{
+        width: 25%;
         margin-bottom: 25px;
-        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .flex-container-mainreason{
+        justify-content: center;
         align-items: center;
+    }
+    .div-mainreason-container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 25px;
+    }
+    .flex-container-mainreason-2items{
+        flex-direction: row;
+        margin:25px;
+        justify-content: center;
+        align-items: center;
+    }
+    .label-1{
+        font-size: 18px;
+        margin-left: 15px;
+    }
+    .label-2{
+        font-size: 18px;
+    }
+    .flex-container-information-main{
+        font-size: 48px;
+        align-items: flex-start;
+    }
+    .check-1{
+        margin-left:15px;
+    }
+    .input-form, .check-1, .textarea{
+        margin-left:15px;
+    }
+    .input-form, .textarea{
+        width: 900px;
+    }
+    .flex-container-history-main h2{
+    font-size: 64px;
+    }
+    .paragraph-history-1{
+        font-size: 24px;
+    }
+    .paragraph-history-2{
+        font-size: 18px;
+    }
+    .flex-container-list-main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .flex-container-list-main h2{
+        font-size: 36px;
+    }
+    .flex-container-list-main a{
+        font-size:24px;
+    }
+}
+@media only screen and (min-width: 1024px){
+    section{
+        width: 80%;
+        margin-left:320px;
     }
 }
