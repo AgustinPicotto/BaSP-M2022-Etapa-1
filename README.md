@@ -31,5 +31,18 @@ Week 3: Progress 100%
 2. We create a resposive desing for the three dispositives (mobile, tablet and desktop).
 3. The main tool of css used was "Flex Box", we study the concepts and applied to the web.
 4. We configure github pages to have the prototype of the web public, and linked to the repository.
+
+``` 
+Week 4: Waiting corrections.
+```
+
+## Javascrip
+
+For week 5, we are goint to learn Javascript.
+1. Create a folder for Week 5, and inside it we will have an index.html file linked to js files, one js file per excercise.
+2. Make commits once a excercise is resolved to have the repository updated.
+3. Make the corrections to the css file of the last week.
+4. MaKe corrections to the FIGMA file of week 1.
+
 ## Contact
 Please be free to send any coment or question at agustin.picotto@gmail.com - BaSP-Paloma 01 Team!
