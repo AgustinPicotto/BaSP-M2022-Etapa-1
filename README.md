@@ -35,7 +35,6 @@ Week 3: Progress 100%
 ``` 
 Week 4: Waiting corrections.
 ```
-
 ## Javascrip
 
 For week 5, we are goint to learn Javascript.
@@ -43,6 +42,8 @@ For week 5, we are goint to learn Javascript.
 2. Make commits once a excercise is resolved to have the repository updated.
 3. Make the corrections to the css file of the last week.
 4. MaKe corrections to the FIGMA file of week 1.
+
+Github pages: https://agustinpicotto.github.io/BaSP-M2022-Etapa-1/Semana-05/index.html
 
 ## Contact
 Please be free to send any coment or question at agustin.picotto@gmail.com - BaSP-Paloma 01 Team!
