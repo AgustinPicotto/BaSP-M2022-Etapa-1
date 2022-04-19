@@ -33,7 +33,7 @@ Week 3: Progress 100%
 4. We configure github pages to have the prototype of the web public, and linked to the repository.
 
 ``` 
-Week 4: Waiting corrections.
+Week 4:Progress 100%
 ```
 ## Javascrip
 
@@ -45,5 +45,8 @@ For week 5, we are goint to learn Javascript.
 
 Github pages: https://agustinpicotto.github.io/BaSP-M2022-Etapa-1/Semana-05/index.html
 
+``` 
+Week 5:Waiting Corrections
+```
 ## Contact
 Please be free to send any coment or question at agustin.picotto@gmail.com - BaSP-Paloma 01 Team!

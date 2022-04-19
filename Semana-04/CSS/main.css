@@ -38,19 +38,21 @@
     align-items: center;
 }
 .flex-container-description-main h2{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     margin: 20px 10px;
+    margin-top: 100px;
 }
 .flex-container-description-main h3{
-    font-size: 13px;
+    font-size: 20px;
     font-size: bold;
     margin-bottom:10px;
 }
 .flex-container-description-main p{
-    font-size: 9px;
+    font-size: 15px;
     text-align: center;
     margin: 10px 10px;
+    width: 90%;
 }
 .flex-container-description-main img{
     width: 50%;
@@ -62,43 +64,48 @@
 }
 .flex-container-features-main{
     align-items: center;
+    margin-bottom: 10px;
+}
+.flex-container-features-2items{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-items: center;
 }
 .flex-container-features-main h2{
-    font-size: 18px;
+    font-size: 25px;
     margin: 10px 10px;
 }
 .flex-container-features-main h3{
-    font-size: 10px;
+    font-size: 18px;
     font-style: bold;
     margin-top: 15px;
     margin-bottom:5px;
 }
 .flex-div{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .flex-container-features-main img{
-    width: 10%;
-    margin-bottom: 25px;
+    width: 20%;
     margin-left: 5px;
     margin-right: 5px;
 }
 .flex-container-features-main .p-odd{
-    font-size:7px;
+    font-size:15px;
     width: 70%;
     text-align: center;
-    margin-right: 40px;
     color:#373867;
     line-height: 12px;
     margin-bottom: 10px;
 }
 .flex-container-features-main .p-even{
-    font-size:7px;
+    font-size:15px;
     width: 70%;
     text-align: center;
-    margin-left: 20px;
     color:#373867;
     line-height: 12px;
     margin-bottom: 10px;
@@ -114,7 +121,7 @@
     border: 2px solid #AACE9B;
     margin-bottom: 10px;
     margin-top: 10px;
-    width: 65%;
+    width: 45%;
     padding:10px;
 }
 .div-mainreason-container p{
@@ -131,6 +138,10 @@
 .flex-container-information-main{
     align-items: center;
 }
+.flex-container-information-main h2{
+    font-size: 25px;
+    color: #373867;
+}
 .label-1{
     font-size: 9px;
     font-weight: bold;
@@ -142,14 +153,32 @@
     font-weight: bold;
     color: #636363;
 }
+form{
+    width: 75%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .div-form{
     margin: 10px 10px;
+    width: 75%;
 }
 textarea{
-    width: 200px;
+    width: 100%;
 }
 .input-form{
-    width: 200px;
+    width: 100%;
+}
+.buttom{
+    background-color: #AACE9B;
+    margin:10px;
+    color:#fff;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.buttom:hover{
+    background-color: #373867;
 }
 .flex-container-history-main{
     align-items: center;
@@ -161,17 +190,20 @@ textarea{
     margin: 15px 15px;
 }
 .paragraph-history-1{
-    font-size: 10px;
+    font-size: 15px;
     font-size: bold;
     text-align: center;
     margin: 10px 10px;
     color: #373867;
+    width: 90%;
+
 }
 .paragraph-history-2{
-    font-size: 7px;
+    font-size: 10px;
     text-align: center;
     margin: 10px 10px;
     color: #373867;
+    width:90%;
 }
 .flex-container-list-1{
     align-items: center;
@@ -213,6 +245,7 @@ textarea{
 @media only screen and (min-width: 768px) {
     .flex-container-description-main h2{
         font-size: 72px;
+        margin-top: 150px;
     }
     .flex-container-description-main h3{
         font-size: 36px;
@@ -250,8 +283,12 @@ textarea{
         line-height: 12px;
         margin-bottom: 10px;
     }
+    .flex-container-features-2items{
+        flex-direction: row;
+        width: 100%;
+    }
     .flex-container-features-2items img{
-        width: 25%;
+        width: 15%;
         margin-bottom: 25px;
         margin-left: 5px;
         margin-right: 5px;
@@ -272,6 +309,12 @@ textarea{
         justify-content: center;
         align-items: center;
     }
+    .flex-container-information-main h2{
+        font-size: 48px;
+    }
+    form{
+        width: 95%;
+    }
     .label-1{
         font-size: 18px;
         margin-left: 15px;
@@ -290,7 +333,7 @@ textarea{
         margin-left:15px;
     }
     .input-form, .textarea{
-        width: 900px;
+        width: 95%;
     }
     .flex-container-history-main h2{
     font-size: 64px;
@@ -317,7 +360,7 @@ textarea{
 }
 @media only screen and (min-width: 1024px){
     section{
-        width: 80%;
-        margin-left:320px;
+        width: 75%;
+        margin-left:275px;
     }
 }
