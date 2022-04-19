@@ -311,6 +311,7 @@ textarea{
     }
     .flex-container-information-main h2{
         font-size: 48px;
+        margin-left: 25px;
     }
     form{
         width: 95%;
@@ -360,7 +361,7 @@ textarea{
 }
 @media only screen and (min-width: 1024px){
     section{
-        width: 75%;
-        margin-left:275px;
+        width: 70%;
+        margin-left:20%;
     }
 }
