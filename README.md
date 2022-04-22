@@ -33,7 +33,7 @@ Week 3: Progress 100%
 4. We configure github pages to have the prototype of the web public, and linked to the repository.
 
 ``` 
-Week 4:Progress 100%
+Week 4: Progress 100%
 ```
 ## Javascrip
 
@@ -46,7 +46,22 @@ For week 5, we are goint to learn Javascript.
 Github pages: https://agustinpicotto.github.io/BaSP-M2022-Etapa-1/Semana-05/index.html
 
 ``` 
-Week 5:Waiting Corrections
+Week 5: Waiting Corrections
+```
+
+## Javascrip DOM management
+For week 6, we are going to create two screenflows: logins-> login.html and employee sign up ->employee-singup.html. Both of them will have the css and js files.
+for login.html we will create login.css and login.js, and for employee-singup.html
+we will have singup.css and singup.js.
+1. Set up the folders for W6.
+2. Creation of html and css for login.
+3. Creation of html and css for employee sing up.
+4. Make the validations with javascript for both files.
+5. Make the commits and share the updates thought all the steps above.
+6. Share the links of github pages.
+
+``` 
+Week 6: On going
 ```
 ## Contact
 Please be free to send any coment or question at agustin.picotto@gmail.com - BaSP-Paloma 01 Team!

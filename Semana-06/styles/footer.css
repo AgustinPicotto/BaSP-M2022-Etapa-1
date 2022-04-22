@@ -1,0 +1,24 @@
+.flex-container-footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #AACE9B;
+    height: 120px;
+    text-align: center;
+    justify-content: center;
+}
+.flex-container-footer p{
+    font-size: 9px;
+    font-weight: bold;
+    color: #373867;
+}
+@media only screen and (min-width: 768px){
+    .flex-container-footer p{
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+@media only screen and (mind-width: 1024px){
+    footer p{
+        margin-left: 320px;
+    }
+}

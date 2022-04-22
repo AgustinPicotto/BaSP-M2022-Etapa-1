@@ -1,0 +1,73 @@
+.login{
+width: 70%;
+margin-left: 25%;
+margin-top: 25%;
+margin-bottom: 60%;
+}
+.flex-contaner-login{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border: 0;
+    box-shadow: 0px 5px 12px gray;
+    align-items: center;
+    height: 500px;
+}
+.form-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-title{
+    font-size: 30px;
+    margin:40px 0px;
+    color: #373867;
+    font-style: bolder;
+}
+.form-login{
+    width: 90%;
+}
+.input-login{
+    width: 80%;
+    border: 0;
+    border-bottom: 2px solid #000;
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+.label-email{
+    margin-bottom: 20px;
+    color: red;
+    font-size: 15px;
+    align-self: flex-start;
+    margin-left: 10%;
+}
+.label-password{
+    margin-bottom: 20px;
+    color: red;
+    font-size: 15px;
+    align-self: flex-start;
+    margin-left: 10%;
+}
+.remember-login{
+    font-size: 15px;
+}
+.check-flex-container{
+    width: 80%;
+}
+.buttom-agree-login{
+    padding:10px;
+    width: 25%;
+    font-size: 25px;
+    background-color: #AACE9B;
+    color:#fff;
+    border: 1px solid #AACE9B;
+    border-radius: 25px;
+    margin-top:50px;
+}
+.buttom-resetpass-login{
+    font-size: 25px;
+    background-color: #fff;
+    border: 0;
+    margin-top:50px;
+    align-self: flex-end;
+}
