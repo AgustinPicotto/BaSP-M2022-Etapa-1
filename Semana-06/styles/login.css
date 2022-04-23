@@ -4,7 +4,7 @@ margin-left: 25%;
 margin-top: 25%;
 margin-bottom: 60%;
 }
-.flex-contaner-login{
+.flex-container-login{
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -17,6 +17,11 @@ margin-bottom: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.flex-container-input{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 .login-title{
     font-size: 30px;
@@ -39,14 +44,18 @@ margin-bottom: 60%;
     color: red;
     font-size: 15px;
     align-self: flex-start;
-    margin-left: 10%;
+    margin-left: 12%;
+}
+.icon-lock{
+    height: 70%;
+    margin:5px;
 }
 .label-password{
     margin-bottom: 20px;
     color: red;
     font-size: 15px;
     align-self: flex-start;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 .remember-login{
     font-size: 15px;

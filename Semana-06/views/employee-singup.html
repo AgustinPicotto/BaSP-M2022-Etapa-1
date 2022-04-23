@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="../styles/header.css">
+    <link rel="stylesheet" type="text/css" href="../styles/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="../styles/body.css">
+    <link rel="stylesheet" type="text/css" href="../styles/employee-singup.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    </style>
+    <title>
+            Trackgenix SA
+    </title>
+</head>
+<body>
+    <!-- Headings-->
+    <header class="flex-container-header">
+        <h1>
+            Trackgenix
+        </h1>
+        <h2>
+            We're Trackgenix SA
+        </h2>
+    </header>
+    <nav class="flex-container-nav">
+        <img class="icon-burguer-menu" src="../assets/burguer-menu.png" alt="icon-burguer-menu" href="#">
+        <div class="bordered-top"></div>
+        <ul>
+            <li>
+               <a href="../views/index.html">Home</a>
+            </li>
+            <li>
+                <a href="../views/employee-singup.html">Sing Up</a>
+            </li>
+            <li>
+                <a href="../views/login.html">Log In</a>
+            </li>
+        </ul>
+        <div class="bordered-bottom"></div>
+            <h2 class="contact-nav">
+                Contact
+            </h2>
+            <p class="paragraph-nav">
+                Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem 
+                ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem 
+                feugiat tempus aliquam.
+            </p>
+            <img class="icon" src="../assets/email.png" alt="icono mail">
+            <p class="icon-desc-1">
+                information@unititled.tld
+            </p>
+            <img class="icon" src="../assets/phone.png" alt="icono telefono">
+            <p class="icon-desc-1">
+                Tel.:(000) 000-0000
+            </p>
+            <img class="icon" src="../assets/house.png" alt="icono casa">
+            <p class="icon-desc-2">
+                1234 Somewhere Road #8254
+            </p>
+            <p class="icon-desc-2">
+                Nashville, TN 00000-0000
+            </p>
+    </nav>
+   <!--Sing Up-->
+   <section class="sing-up">
+    <div class="flex-container-singup">
+        <h3 class="singup-title">
+            Sing Up
+        </h3>
+        <form class="form-login">
+            <!--Nombre: Solo letras y debe tener más de 3 letras. 
+            Apellido: Solo letras y debe tener más de 3 letras. 
+            DNI: Solo número y debe tener más de 7 números. 
+            Fecha de Nacimiento: Con formato dd/mm/aaaa.
+            Teléfono: Solo número y debe tener 10 números.
+            Dirección: Al menos 5 caracteres con letras, números y un espacio en el medio.
+            Localidad: Texto alfanumérico y debe tener más de 3 letras. 
+            Código Postal: Solo número y debe tener entre 4 y 5 números. 
+            Email: Debe tener un formato de email válido.
+            Contraseña: Al menos 8 caracteres, formados por letras y números.
+            Repetir Contraseña: Al menos 8 caracteres, formados por letras y números-->
+            <input class="input-singup" type="text" placeholder="First Name">
+            <label class="label-error">
+                *Please, insert a First Name
+            </label>
+            <input class="input-singup" type="text" placeholder="Last Name">
+            <label class="label-error">
+                *Please, insert a Last Name
+            </label>
+            <input class="input-singup" type="number" placeholder="DNI">
+            <label class="label-error">
+                *Please, insert a correct DNI
+            </label>
+            <input class="input-singup" type="date" placeholder="Birth date">
+            <label class="label-error">
+                *Please, insert a correct Birth date
+            </label>
+            <input class="input-singup" type="number" placeholder="Phone number">
+            <label class="label-error">
+                *Please, insert a correct Phone number
+            </label>
+            <input class="input-singup" type="text" placeholder="Adress">
+            <label class="label-error">
+                *Please, insert a correct Adress
+            </label>
+            <input class="input-singup" type="text" placeholder="State">
+            <label class="label-error">
+                *Please, insert a correct State
+            </label>
+            <input class="input-singup" type="number" placeholder="Postal code">
+            <label class="label-error">
+                *Please, insert a correct Postal code
+            </label>
+            <input class="input-singup" type="text" placeholder="email@email">
+            <label class="label-error">
+                *Please, insert a correct email
+            </label>
+            <input class="input-singup" type="text" placeholder="Password">
+            <label class="label-error">
+                *Please, insert a correct password
+            </label>
+            <input class="input-singup" type="text" placeholder="Repeat password">
+            <label class="label-error">
+                *Please, repeat the password
+            </label>
+            <input class="buttom-agree-singup" type="submit" value="Create Account"></input>
+        </form>
+    </div>
+    </section>
+    <!--Footer-->
+    <footer class="flex-container-footer">
+        <p>
+            Rosario, Santa Fe - Argentina
+        </p>
+        <p>
+            Copyright &#169 2022 Trackgenix SA, All right reserved.
+        </p>
+    </footer>
+</body>
+</html>

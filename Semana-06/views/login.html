@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../styles/sidebar.css">
     <link rel="stylesheet" type="text/css" href="../styles/login.css">
     <link rel="stylesheet" type="text/css" href="../styles/body.css">
+    <script src="../javascript/login.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
     </style>
@@ -32,13 +33,13 @@
         <div class="bordered-top"></div>
         <ul>
             <li>
-               <a href="#">Home</a>
+               <a href="../views/index.html">Home</a>
             </li>
             <li>
-                <a href="#">Sing Up</a>
+                <a href="../views/employee-singup.html">Sing Up</a>
             </li>
             <li>
-                <a href="#">Log In</a>
+                <a href="../views/login.html">Log In</a>
             </li>
         </ul>
         <div class="bordered-bottom"></div>
@@ -68,25 +69,31 @@
     </nav>
    <!--login-->
    <section class="login">
-    <div class="flex-contaner-login">
+    <div class="flex-container-login">
         <h3 class="login-title">
             Log In
         </h3>
         <form class="form-login">
-            <input class="input-login" type="text" placeholder="email@emal.com">
-            <label class="label-email">
+            <div class="flex-container-input">
+            <img src="../assets/email2.png" alt="icon-email" class="icon-email">
+            <input class="input-login" type="text" placeholder="email@emal.com" id="email-login">
+            </div>
+            <label class="label-email" id="lb-login-email">
                 *Please, insert a correct email
             </label>
-            <input class="input-login" type="password">
-            <label class="label-password">
+            <div class="flex-container-input">
+                <img src="../assets/lock.png" alt="icon-lock" class="icon-lock">
+                <input class="input-login" type="password" id="pass-login">
+            </div>
+            <label class="label-password" id="lb-login-pass">
                 *Wrong password
             </label>
             <div class="check-flex-container">
                 <input class="checkbox-login" type="checkbox">
                 <label class="remember-login">Remember me</label>
             </div>
-            <input class="buttom-agree-login" type="submit" value="Agree"></input>
-            <input class="buttom-resetpass-login" type="submit" value="Reset password"></input>
+            <input class="buttom-agree-login" type="button" value="Agree" id="button-login"></input>
+            <input class="buttom-resetpass-login" type="button" value="Reset password"></input>
         </form>
     </div>
     </section>
