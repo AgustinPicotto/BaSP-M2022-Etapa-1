@@ -23,6 +23,8 @@ window.onload = function() {
     })
     passLogin.addEventListener('blur',function(){
         largePass = passLogin.value;
+        console.log(largePass.length);
+        comprobation2=0;
         if (largePass.length<7){
             comprobation2=-1;
         }
