@@ -80,56 +80,56 @@
             Fecha de Nacimiento: Con formato dd/mm/aaaa.
             Teléfono: Solo número y debe tener 10 números.
             Dirección: Al menos 5 caracteres con letras, números y un espacio en el medio.
-            Localidad: Texto alfanumérico y debe tener más de 3 letras. 
+            Localidad: Texto alfanumérico y debe tener más de 3 letras.
             Código Postal: Solo número y debe tener entre 4 y 5 números. 
             Email: Debe tener un formato de email válido.
             Contraseña: Al menos 8 caracteres, formados por letras y números.
             Repetir Contraseña: Al menos 8 caracteres, formados por letras y números-->
             <input class="input-singup" type="text" placeholder="First Name" id="fname">
             <label class="label-error" id="lbfname">
-                *Please, insert a First Name
+                *Please, insert a name, only letters, minimum of 3 characters
             </label>
             <input class="input-singup" type="text" placeholder="Last Name" id="lname">
-            <label class="label-error">
-                *Please, insert a Last Name
+            <label class="label-error" id="lblname">
+                *Please, insert a name, only letters, minumum of 3 characters
             </label>
-            <input class="input-singup" type="number" placeholder="DNI" id="dni">
-            <label class="label-error">
-                *Please, insert a correct DNI
+            <input class="input-singup" type="text" placeholder="DNI" id="dni">
+            <label class="label-error" id="lbdni">
+                *Please, insert a number, at least 8 digits
             </label>
             <input class="input-singup" type="date" placeholder="Birth date" id="bdate">
-            <label class="label-error">
-                *Please, insert a correct Birth date
+            <label class="label-error" id="lbdate">
+                *Please, review your Birthday date
             </label>
-            <input class="input-singup" type="number" placeholder="Phone number" id="pnumber">
-            <label class="label-error">
-                *Please, insert a correct Phone number
+            <input class="input-singup" type="text" placeholder="Phone number" id="pnumber">
+            <label class="label-error" id="lbnumber">
+                *Please, your phone number must have 10 numbers
             </label>
             <input class="input-singup" type="text" placeholder="Adress" id="adress">
-            <label class="label-error">
-                *Please, insert a correct Adress
+            <label class="label-error" id="lbadress">
+                *Please, insert a correct Adress (direction+number), at least 5 characters
             </label>
             <input class="input-singup" type="text" placeholder="State" id="state">
-            <label class="label-error">
-                *Please, insert a correct State
+            <label class="label-error" id="lbstate">
+                *Please, insert a correct State, at least 3 characters
             </label>
-            <input class="input-singup" type="number" placeholder="Postal code" id="cc">
-            <label class="label-error">
-                *Please, insert a correct Postal code
+            <input class="input-singup" type="text" placeholder="Postal code" id="cc">
+            <label class="label-error" id="lbcc">
+                *Please, insert a correct Postal code, 4-5 digits
             </label>
             <input class="input-singup" type="text" placeholder="email@email" id="email">
-            <label class="label-error">
-                *Please, insert a correct email
+            <label class="label-error" id="lbemail">
+                *Please, insert a correct email format
             </label>
-            <input class="input-singup" type="text" placeholder="Password" id="password1">
-            <label class="label-error">
+            <input class="input-singup" type="password" placeholder="Password" id="password1">
+            <label class="label-error" id="lbpass1">
                 *Please, insert a 8 digit alphanumeric Password
             </label>
             <input class="input-singup" type="text" placeholder="Repeat password" id="password2">
-            <label class="label-error">
+            <label class="label-error" id="lbpass2">
                 *Please, repeat the password
             </label>
-            <input class="buttom-agree-singup" type="submit" value="Create Account"></input>
+            <input class="buttom-agree-singup" type="button" value="Create Account" id="btsingup"></input>
         </form>
     </div>
     </section>

@@ -9,14 +9,13 @@ window.onload = function() {
     var letters =["a","b","c","d","e","f","g","h","i","j","k","l","m","n","ñ","o","p","q","r","s","t","u","v","w","x","y","z"];
     var emailLogin = document.getElementById('email-login');
     
+    // Email Validation
     emailLogin.addEventListener('focus',function(){
     lbEmail.style.display = "none";
     })
     var emailRegex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
     emailLogin.addEventListener('blur',function(){
         if (emailRegex.test(emailLogin.value)){
-        //comprobation1 = emailLogin.value.indexOf("@");  
-        //if (comprobation1===-1){
             lbEmail.style.display = "none";
             comprobation1=true;
         } else {
@@ -24,7 +23,8 @@ window.onload = function() {
             comprobation1=false;
         }
     })
-
+    
+    //Password Validation
     var passLogin = document.getElementById('pass-login');
         passLogin.addEventListener('focus',function(){
         lbPass.style.display = "none";
@@ -38,7 +38,6 @@ window.onload = function() {
             comprobation2 =true;
         }
         for (i=0; i <letters.length; i++){
-            //const letter = passLogin.value[i];
             if (passLogin.value.includes(letters[i])){
             comprobationLetter = true; 
                 for (j=0;j<numbers.length;j++){
@@ -54,11 +53,14 @@ window.onload = function() {
         }
         }
     })
+
+    //Buttom Summit
     var btLogin = document.getElementById('button-login');
     btLogin.addEventListener('click', function(){
         console.log(comprobation1, comprobation2);
         if(comprobation1 && comprobation2){
-            window.alert("Your are login");
+            alert("Your are login successfully! Email: "+emailLogin.value
+            +"Password: "+passLogin.value);
         } else {
             window.alert("Please review the email and password inputs");
         }
