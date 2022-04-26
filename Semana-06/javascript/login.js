@@ -3,41 +3,61 @@ window.onload = function() {
     var lbPass = document.getElementById('lb-login-pass');
     lbEmail.style.display = "none";
     lbPass.style.display = "none";
-    var comprobation1, comprobation2, largePass;
+    
+    var comprobation1, comprobation2, lengthPass, comprobationNum, comprobationLetter;
+    var numbers =["0","1","2","3","4","5","6","7","8","9"];
+    var letters =["a","b","c","d","e","f","g","h","i","j","k","l","m","n","ñ","o","p","q","r","s","t","u","v","w","x","y","z"];
     var emailLogin = document.getElementById('email-login');
+    
     emailLogin.addEventListener('focus',function(){
     lbEmail.style.display = "none";
     })
+    var emailRegex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
     emailLogin.addEventListener('blur',function(){
-        comprobation1 = emailLogin.value.indexOf("@");  
-        if (comprobation1===-1){
-            lbEmail.style.display = "flex";
-        } else {
+        if (emailRegex.test(emailLogin.value)){
+        //comprobation1 = emailLogin.value.indexOf("@");  
+        //if (comprobation1===-1){
             lbEmail.style.display = "none";
-            comprobation1=2;
+            comprobation1=true;
+        } else {
+            lbEmail.style.display = "flex";
+            comprobation1=false;
         }
     })
+
     var passLogin = document.getElementById('pass-login');
         passLogin.addEventListener('focus',function(){
         lbPass.style.display = "none";
     })
     passLogin.addEventListener('blur',function(){
-        largePass = passLogin.value;
-        console.log(largePass.length);
-        comprobation2=0;
-        if (largePass.length<7){
-            comprobation2=-1;
+        lengthPass=false;
+        comprobationNum = false;
+        comprobationLetter= false;
+        if (passLogin.value.length>7){
+            lengthPass=true;
+            comprobation2 =true;
         }
-        if (comprobation2===-1){
-            lbPass.style.display = "flex";
-        } else {
+        for (i=0; i <letters.length; i++){
+            //const letter = passLogin.value[i];
+            if (passLogin.value.includes(letters[i])){
+            comprobationLetter = true; 
+                for (j=0;j<numbers.length;j++){
+                    if (passLogin.value.includes(numbers[j])){
+                    comprobationNum = true;
+                    }
+                }
+            }
+        if (lengthPass && comprobationLetter && comprobationNum){
             lbPass.style.display = "none";
-            comprobation2=2;
+        } else {
+            lbPass.style.display = "flex";
+        }
         }
     })
     var btLogin = document.getElementById('button-login');
     btLogin.addEventListener('click', function(){
-        if(comprobation1===2 && comprobation2===2){
+        console.log(comprobation1, comprobation2);
+        if(comprobation1 && comprobation2){
             window.alert("Your are login");
         } else {
             window.alert("Please review the email and password inputs");
