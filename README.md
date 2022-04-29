@@ -7,9 +7,9 @@ This project with name "Trackgenix", will facilitate the records of worked hours
 1. Using FIGMA, the team created all the screenflow for the app.
 2. We done a prototype of the application, with the correct desing and styles.
 3. The simulation has been completed satisfatory.
-4. On backlog create the screenflow for the Profile PM, loads hours.
+
 ```
-Week 1: Progress 90%
+Week 1: Progress 100%
 ```
 ## HTML Structure
 1. Utilizing Visual Studio Code, we wrote the codes for the structure of the landing page of "Trackgenix".
@@ -60,8 +60,27 @@ we will have singup.css and singup.js.
 5. Make the commits and share the updates thought all the steps above.
 6. Share the links of github pages.
 
+Github pages: https://agustin.picotto.github/BasP-M2022-Etapa-1/Semana-06/views/index.html
+
 ``` 
-Week 6: On going
+Week 6: Waiting Corrections
 ```
+## Client - Server
+
+Extend the funtionalities of the login and sing-up HTMLs created on week 07 doing that the information load on both forms will send to a Web Server utilizing the metod: Fetch.
+
+1. Set up the folder for W7.
+2. Creation the logic for the buttons send on both forms.
+3. Make sure that all the data of each forms be in the URL to recive a satisfactory awnswer.
+4. Create the funtions for the sucess and fails on the send of data.
+5. Create the code to storage the data on LocalStorage.
+
+haciendo que la información cargada en cada formulario sea enviado a un Servidor Web utilizando el método Fetch de Javascript.
+
+
+``` 
+Week 7: On Going
+```
+
 ## Contact
-Please be free to send any coment or question at agustin.picotto@gmail.com - BaSP-Paloma 01 Team!
+Please be free to send any coment or question at agustin.picotto@gmail.com - BaSP-Coco Team!

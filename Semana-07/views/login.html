@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="../styles/header.css">
+    <link rel="stylesheet" type="text/css" href="../styles/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="../styles/login.css">
+    <link rel="stylesheet" type="text/css" href="../styles/body.css">
+    <script src="../javascript/login.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    </style>
+    <title>
+            Trackgenix SA
+    </title>
+</head>
+<body>
+    <!-- Headings-->
+    <header class="flex-container-header">
+        <h1>
+            Trackgenix
+        </h1>
+        <h2>
+            We're Trackgenix SA
+        </h2>
+    </header>
+    <nav class="flex-container-nav">
+        <img class="icon-burguer-menu" src="../assets/burguer-menu.png" alt="icon-burguer-menu" href="#">
+        <div class="bordered-top"></div>
+        <ul>
+            <li>
+               <a href="../views/index.html">Home</a>
+            </li>
+            <li>
+                <a href="../views/employee-singup.html">Sing Up</a>
+            </li>
+            <li>
+                <a href="../views/login.html">Log In</a>
+            </li>
+        </ul>
+        <div class="bordered-bottom"></div>
+            <h2 class="contact-nav">
+                Contact
+            </h2>
+            <p class="paragraph-nav">
+                Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem 
+                ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem 
+                feugiat tempus aliquam.
+            </p>
+            <img class="icon" src="../assets/email.png" alt="icono mail">
+            <p class="icon-desc-1">
+                information@unititled.tld
+            </p>
+            <img class="icon" src="../assets/phone.png" alt="icono telefono">
+            <p class="icon-desc-1">
+                Tel.:(000) 000-0000
+            </p>
+            <img class="icon" src="../assets/house.png" alt="icono casa">
+            <p class="icon-desc-2">
+                1234 Somewhere Road #8254
+            </p>
+            <p class="icon-desc-2">
+                Nashville, TN 00000-0000
+            </p>
+    </nav>
+   <!--login-->
+   <section class="login">
+    <div class="flex-container-login">
+        <h3 class="login-title">
+            Log In
+        </h3>
+        <form class="form-login">
+            <div class="flex-container-input">
+            <img src="../assets/email2.png" alt="icon-email" class="icon-email">
+            <input class="input-login" type="text" placeholder="email@emal.com" id="email-login">
+            </div>
+            <label class="label-email" id="lb-login-email">
+                *Please, insert a correct email format
+            </label>
+            <div class="flex-container-input">
+                <img src="../assets/lock.png" alt="icon-lock" class="icon-lock">
+                <input class="input-login" type="password" id="pass-login">
+            </div>
+            <label class="label-password" id="lb-login-pass">
+                *Please, the password must contein 8 digits and, at least, one letter and one number.
+            </label>
+            <div class="check-flex-container">
+                <input class="checkbox-login" type="checkbox">
+                <label class="remember-login">Remember me</label>
+            </div>
+            <input class="buttom-agree-login" type="button" value="Agree" id="button-login"></input>
+            <input class="buttom-resetpass-login" type="button" value="Reset password"></input>
+            <div class="div-result" id="result"></div>
+        </form>
+    </div>
+    </section>
+    <!--Footer-->
+    <footer class="flex-container-footer">
+        <p>
+            Rosario, Santa Fe - Argentina
+        </p>
+        <p>
+            Copyright &#169 2022 Trackgenix SA, All right reserved.
+        </p>
+    </footer>
+</body>
+</html>
