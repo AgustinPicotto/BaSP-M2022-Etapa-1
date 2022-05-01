@@ -56,8 +56,41 @@ window.onload = function() {
 
     //Buttom Summit
     var btLogin = document.getElementById('button-login');
-    btLogin.addEventListener('click', function(){
-        if(comprobation1 && comprobation2){
+    btLogin.addEventListener('click', getUserinfo)
+    function getUserinfo(e){
+        var urlServer="https://basp-m2022-api-rest-server.herokuapp.com/login";
+        urlServer= urlServer+ "?email="+ emailLogin.value + "&password"+passLogin.value;
+        e.preventDefault ();
+        if(comprobation1==false || comprobation2==false || emailLogin.value=="" || passLogin.value==""){
+            fetch(urlServer)
+            .then(function(response){
+                return response.json()
+            })
+            .then(function(res){
+                alert("User not Found")
+            })
+            .catch(function(err){
+                console.log("error")
+            })
+        } else if (emailLogin.value != "rose@radiumrocket.com" || passLogin.value != "BaSP2022"){
+            fetch(urlServer)
+            .then(function(res){
+                return res.json()
+            })
+            .then(function(res){
+                alert("User not found")
+            })
+        } else {
+            fetch(urlServer)
+            .then(function(response){
+                return response.json()
+            })
+            .then(function(res){
+            alert(emailLogin.value + passLogin.value)
+        })
+        }
+    }
+    /*    if(comprobation1 && comprobation2){
             // get input value
             var newUser= emailLogin.value;
             var newPass= passLogin.value;
@@ -80,4 +113,5 @@ window.onload = function() {
             window.alert("Please review the email and password inputs");
         }
     })
+*/
 }
