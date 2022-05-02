@@ -60,6 +60,7 @@ window.onload = function (){
                     }
                     lbFName.style.display="none";
                     fNameValidation=1;
+                    //fName.value = localStorage.getItem("firstName");
                 } else {
                     lbFName.style.display="flex"
                     fNameValidation=0;
@@ -97,6 +98,7 @@ window.onload = function (){
                     }
                     lbLName.style.display="none";
                     lNameValidation=1;
+                    //lName.value = localStorage.getItem("lastName");
                 } else{
                     lbLName.style.display="flex";
                     lNameValidation=0;
@@ -136,6 +138,7 @@ window.onload = function (){
         if (dniLength && dniOk){
             lbDni.style.display = "none";
             dniValidation=1;
+            //dni.value = localStorage.getItem("dni");
         } else{
             lbDni.style.display= "flex";
             dniValidation=0;
@@ -170,6 +173,7 @@ window.onload = function (){
                 if (dayBCheck<0){
                     bDate.style.display="none";
                     bValidation=1;
+                    //bDate.value = localStorage.getItem("bdate");
                 }
             }
         }
@@ -206,6 +210,7 @@ window.onload = function (){
     if (pNumberLength && pNumberOk){
         lbPNumber.style.display="none";
         pNumberValidation=1;
+        //pNumber.value = localStorage.getItem("pnumber");
     } else{
         lbPNumber.style.display="flex";
         pNumberValidation=0;
@@ -233,6 +238,7 @@ window.onload = function (){
     if(adressLength && spaceBetween<adress.value.length-1 && spaceBetween>0){
         lbAdress.style.display="none";
         adressValidation=1;
+        //adress.value = localStorage.getItem("adress");
     } else{
         lbAdress.style.display="flex";
         adressValidation=0;
@@ -259,6 +265,7 @@ window.onload = function (){
     if(stateLength){
         lbState.style.display="none";
         stateValidation=1;
+        //state.value = localStorage.getItem("state")
     } else{
         lbState.style.display="flex";
         stateValidation=0;
@@ -365,8 +372,62 @@ window.onload = function (){
     })
     
     //Summit Button
-    btSingUp.addEventListener('click',function(){
-        if(fNameValidation===1 && lNameValidation===1 && dniValidation===1 && bValidation===1 && pNumberValidation===1
+    btSingUp.addEventListener('click',getUserInfo)
+    function getUserInfo(e){
+        var urlServer="https://basp-m2022-api-rest-server.herokuapp.com/login";
+        urlServer= urlServer+ "?email="+ fName.value + "&password"+lName.value + "&dni="+dni.value+"&bdate"
+        +bDate.value+"&pnum="+pNumber.value+"&adress="+adress.value+"&state="+state.value+"&cc="+cc.value+
+        "&email="+email.value+"&password1="+password1.value+"&password2="+password2.value;
+        e.preventDefault();
+        //Comprobation that all of your fields are complete
+        if(fNameValidation!=1 || lNameValidation!=1 || dniValidation!=1 || bValidation!=1 || pNumberValidation!=1 ||
+            adressValidation!=1 || stateValidation!=1 || ccValidation!=1 || emailValidation!=1 ||
+            password1Validation!=1 || password2Validation!=1){
+                fetch(urlServer)
+                .then(function(response){
+                    return response.json()
+                })
+                .then(function(res){
+                    alert("Review your inputs")
+                })
+                .catch(function(err){
+                    console.log("error")
+                })
+            }else {
+                fetch(urlServer)
+                .then(function(response){
+                    return response.json()
+                })
+                .then(function(res){
+                    alert("You are sing up successfully! First Name: "+fName.value
+                    +"Last Name: "+lName.value
+                    +"DNI: "+dni.value
+                    +"Birthday date: "+ bDate.value
+                    +"Phone Number: "+pNumber.value
+                    +"Adress: "+adress.value
+                    +"State: "+state.value
+                    +"Postal Code: "+cc.value
+                    +"Email: "+email.value
+                    +"Password: "+password1.value
+                    +"Re-Password: "+password2.value)
+                })
+                .catch(function(err){
+                    console.log("error");
+                })
+                localStorage.setItem("firstname",fName.value);
+                localStorage.setItem("lastname",lName.value);
+                localStorage.setItem("dni",dni.value);
+                localStorage.setItem("birthday",bDate.value);
+                localStorage.setItem("phone",pNumber.value);
+                localStorage.setItem("adress",adress.value);
+                localStorage.setItem("state",state.value);
+                localStorage.setItem("postalcode",cc.value);
+                localStorage.setItem("email",email.value);
+                localStorage.setItem("password",password1.value);
+                localStorage.setItem("repassword",password2.value);
+            }
+    }
+    /*    if(fNameValidation===1 && lNameValidation===1 && dniValidation===1 && bValidation===1 && pNumberValidation===1
             && adressValidation===1 && stateValidation===1 && ccValidation===1 && emailValidation===1 &&
             password1Validation===1 && password2Validation===1){
             //get input value
@@ -437,5 +498,6 @@ window.onload = function (){
             }else {
             alert("Review your imputs")
             }
-    })
+    }
+*/
 }

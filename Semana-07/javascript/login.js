@@ -60,25 +60,28 @@ window.onload = function() {
     function getUserinfo(e){
         var urlServer="https://basp-m2022-api-rest-server.herokuapp.com/login";
         urlServer= urlServer+ "?email="+ emailLogin.value + "&password"+passLogin.value;
-        e.preventDefault ();
+        e.preventDefault();
+        //First Check if you have correct your inputs
         if(comprobation1==false || comprobation2==false || emailLogin.value=="" || passLogin.value==""){
             fetch(urlServer)
             .then(function(response){
                 return response.json()
             })
             .then(function(res){
-                alert("User not Found")
+                alert("Review your inputs")
             })
             .catch(function(err){
                 console.log("error")
             })
-        } else if (emailLogin.value != "rose@radiumrocket.com" || passLogin.value != "BaSP2022"){
+        }
+        //Second Check if you are on the database
+        else if (emailLogin.value != "rose@radiumrocket.com" || passLogin.value != "BaSP2022"){
             fetch(urlServer)
             .then(function(res){
                 return res.json()
             })
             .then(function(res){
-                alert("User not found")
+                alert("User not Found")
             })
         } else {
             fetch(urlServer)
@@ -86,11 +89,13 @@ window.onload = function() {
                 return response.json()
             })
             .then(function(res){
-            alert(emailLogin.value + passLogin.value)
+            alert("You are logued as: "+emailLogin.value
+            +"Your Password: "+ passLogin.value)
         })
         }
     }
-    /*    if(comprobation1 && comprobation2){
+    /* OLD DIV for W6 (this still on this code because was a pedding item)   
+    if(comprobation1 && comprobation2){
             // get input value
             var newUser= emailLogin.value;
             var newPass= passLogin.value;
